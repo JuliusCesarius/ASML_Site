@@ -12,7 +12,6 @@
 
 body {
   padding-top: 50px;
-  padding-bottom: 20px;
   font-family:'Droid Sans' !important;
 }
 
@@ -78,6 +77,9 @@ h5,.h5{
 	padding-bottom: 60px;
 }
 .gallery{
+	font-size: .9em;
+	h3{font-size: 1.7em;line-height: 12px}
+	h4{font-size: 1.4em;line-height: 12px}
 	h3, h4{
 		color: white;
 	}
@@ -88,6 +90,30 @@ h5,.h5{
 			padding-bottom: 50px;
 		}
 	}
+	li{
+		position: relative;
+		background-repeat: no-repeat;
+	  	min-height: 600px;
+	  	//width: 100%;
+	  	background-position:50%;
+	  	background-size: cover; 	
+	  	&.truck1{
+			background-image: url(../images/bg1.jpg);
+		}
+		& article{
+			.transition(opacity .3s ease-in-out);
+			cursor: default;
+			opacity: .4;
+			line-height: 1.2em;
+			color: @gris-light;
+			position: absolute;
+			bottom: 0;
+			left: 1.5em;
+			&:hover{
+				opacity: 1;
+			}
+		}
+	}	
 	min-height: 400px;
 	color: white;
 	width: 100%;
@@ -102,6 +128,7 @@ h5,.h5{
   	background-size: cover; 
 }
 .cover-blue{
+	color:white;
 	position: relative;
 	height: 100%;
   	width: 100%;
