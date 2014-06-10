@@ -1,5 +1,6 @@
 @import "functions";
 @azul:#123e84;
+@azul-mate:#29486b;
 @gris :	#919396;
 @rojo: #BC212B;
 @gris-light: #F2F2F2;
@@ -35,11 +36,17 @@ h5,.h5{
 	font-size: 1.3em;
 	line-height: 1.5em;
 }
-
-.row{
-	margin-top: 35px;
+hr{
+	border-top: @rojo;
 }
-.home{	
+.mision,.quienes,.services{
+	padding-bottom: 55px;
+	padding-top: 55px;
+}
+.home{
+	& img{
+		opacity: 1;
+	}
 	color: @gris;
 	position: relative;
 	text-align: center;
@@ -59,6 +66,12 @@ h5,.h5{
 		}
 	}
 }
+.quienes{
+	
+}
+.mision{
+
+}
 .quote{
 	position: relative;
 	width: 100%;
@@ -74,7 +87,18 @@ h5,.h5{
 	h2{
 		padding-bottom:20px;	
 	}
-	padding-bottom: 60px;
+}
+.contacto{
+	article{
+		border-left: 1px solid @gris-dark;
+		font-size: 1.5em;
+		margin: 1em 1em;
+	}
+	h2,h3,h4{
+		color:white!important;	
+	}
+	padding-top: 55px;
+	padding-bottom: 100px;
 }
 .gallery{
 	font-size: .9em;
@@ -98,7 +122,15 @@ h5,.h5{
 	  	background-position:50%;
 	  	background-size: cover; 	
 	  	&.truck1{
-			background-image: url(../images/bg1.jpg);
+			background-image: url(../images/gallery/camion1.jpg);
+		}&.truck2{
+			background-image: url(../images/gallery/camion2.jpg);
+		}&.truck3{
+			background-image: url(../images/gallery/terex.jpg);
+		}&.buque1{
+			background-image: url(../images/gallery/BUQUE_AHTS.jpg);
+		}&.heli1{
+			background-image: url(../images/gallery/bell_212.jpg);
 		}
 		& article{
 			.transition(opacity .3s ease-in-out);
@@ -120,20 +152,46 @@ h5,.h5{
 }
 .background{
 	position:fixed;
-  	background-image: url(../images/bg1.jpg);
   	background-repeat: no-repeat;
   	height: 100%;
   	width: 100%;
   	background-position:50%;
-  	background-size: cover; 
+  	background-size: cover;
+  	.transition(opacity 2s ease-in-out);
+  	&.bg1{
+  		background-image: url(../images/bg1.jpg);
+  	}
+  	&.bg2{
+  		background-image: url(../images/bg2.jpg);
+  		opacity: 0;
+  	}
+  	&.bg3{
+  		background-image: url(../images/bg3.jpg);  		
+  		opacity: 0;
+  	}
+
+}
+
+.cover-blue-mate{
+	color:white;
+	position: relative;
+	height: 100%;
+  	width: 100%;
+	background-color: @azul-mate;
 }
 .cover-blue{
 	color:white;
 	position: relative;
 	height: 100%;
   	width: 100%;
-	background-color: #003769;
+	background-color: @azul-mate;
   	opacity: .88;
+}
+.cover-grey{
+	position: relative;
+	height: 100%;
+  	width: 100%;
+	background-color:@gris-light;
 }
 .cover-red{
 	background-color: #BC1600;
@@ -146,7 +204,6 @@ h5,.h5{
 	margin: 40px auto;
 }
 .navbar-header{
-	height: 85px;
 	padding: 10px;
 }
 
@@ -154,22 +211,22 @@ h5,.h5{
 	.gradient(white,#e9e9e9);
 
 	.navbar-nav {		
-			margin-top: 20px;
+			margin-top: 15px;
 		li{
 			a{
+				.transition(all 1s ease-in-out);
 				padding-top: 10px;
 				padding-bottom: 10px;
-				padding-left: 55px;				
-				color: #3D6B9E;
+				padding-left: 45px;				
+				color: @azul-mate;
+				background-color: none;
 			}
-		}
-		.active	a{
-			color: #BC212B;
-			background-color: inherit;
-			border-right: 2px solid #BC212B;
-			
-			&:hover{
-				background-color: #f8f8f8;
+			&.active{
+				color: @rojo;
+				border-right: 2px solid #BC212B;
+				a{					
+					background-color: inherit!important;
+				}
 			}
 		}
 	}
@@ -204,12 +261,13 @@ ul.valores {
 		float: none;
 		line-height: 35px;
 		span{
+			font-size: 13px;
+			margin-left: 3em;
 			padding-right: 1em;
 		}
 	}
 }
 .jcarousel{
-	padding-bottom: 50px;
 	.carousel-stage{
 
 	}

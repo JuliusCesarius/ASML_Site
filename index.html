@@ -32,7 +32,9 @@
 	</head>
 
 	<body>
-		<div class="background"></div>
+		<div class="background bg1"></div>
+		<div class="background a bg2"></div>
+		<div class="background a bg3"></div>
 		<div class="navbar navbar-default navbar-fixed-top" role="navigation">
 			<div class="container">
 				<div class="navbar-header">
@@ -42,14 +44,15 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-logo" href="http://getbootstrap.com/examples/jumbotron/#"><img src="images/logo.png"></img></a>
+					<a class="navbar-logo" href="#"><img src="images/logo.png"></img></a>
 				</div>
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav navbar-right">
-							<li class="active"><a href="./">INICIO</a></li>
-							<li><a href="../navbar-static-top/">QUIÉNES SOMOS</a></li>
-							<li><a href="../navbar-fixed-top/">SERVICIOS</a></li>
-							<li><a href="../navbar-fixed-top/">CONTACTO</a></li>
+							<li class="active"><a href="#">INICIO</a></li>
+							<li><a href="#quienes">QUIÉNES SOMOS</a></li>
+							<li><a href="#services">SERVICIOS</a></li>
+							<li><a href="#galeria">FLOTILLA</a></li>
+							<li><a href="#contacto">CONTACTO</a></li>
 						</ul>
 				</div><!--/.navbar-collapse -->
 			</div>
@@ -68,95 +71,97 @@
 		</div>
 
 		<div class="white">
-			<div class="container quienes">
+			<div id="quienes" class="container quienes">
 				<!-- Example row of columns -->
-				<div class="row">
-					<div class="col-md-4 text-right">
-						<img class="padding-3" src="images/mundo.jpg"></img>
-					</div>
-					<div class="col-md-7">
-						<h2>QUIÉNES SOMOS</h2>
-						<h5 class="padding-2">Consientes de la importancia del manejo de cargas y personal, el pasado diciembre del año 2009 se incorpora al mercado nacional <span class="rojo">ASM Logistic S.A. de C.V.</span>, empresa especializada en logística de personal, materiales y equipos, así como también, en el área de importaciones y exportaciones.</h5>
-				 </div>
+				<div class="col-md-4 text-right">
+					<img class="padding-3" src="images/mundo.jpg"></img>
 				</div>
-				<hr>
+				<div class="col-md-7">
+					<h2>QUIÉNES SOMOS</h2>
+					<h5 class="padding-2">Consientes de la importancia del manejo de cargas y personal, el pasado diciembre del año 2009 se incorpora al mercado nacional <span class="rojo">ASM Logistic S.A. de C.V.</span>, empresa especializada en logística de personal, materiales y equipos, así como también, en el área de importaciones y exportaciones.</h5>
+			 </div>
 				<div class="row">
-						<div class="jcarousel carousel-stage">
-							<ul id="slides" class="jcarousel-skin-tango">
-									<li>
-										<div class="container slide">
-											<div  class="col-md-3 col-md-offset-1">
-												<img src="images/mision_ico.png"></img>
-											</div>
-
-											<div class="info col-md-7">
-												<h3>Misión</h3>
-												<p class="h5">
-													Convertirnos en parte fundamental del crecimiento de nuestros clientes, aportando opciones de logística en el mercado, a través de un servicio global y de manejo de cargas y personal desde el punto de origen hasta su entrega final, así como, el adicional de consultoría aduanal.
-												</p>
-											</div>
-										</div>
-									</li>
-									<li>
-										<div class="container slide">
-											<div  class="col-md-3 col-md-offset-1">
-												<img src="images/vision_ico.png"></img>
-											</div>
-											<div class="info col-md-7">
-												<h3>Visión</h3>
-												<p class="h5">
-													Llegar a ser una empresa que integre de manera global servicios de logística y consultoría aduanal para así promover el crecimiento de nuestros clientes vigilando en todo momento el precio-calidad y siempre integrando un valor agregado.
-												</p>
-											</div>
-										</div>
-									</li>
-									<li>
-										<div class="container slide">
-											<div  class="col-md-3 col-md-offset-1">
-												<img src="images/valores_ico.png"></img>
-											</div>
-											<div class="info col-md-7">
-												<h3>Valores</h3>
-												<p>
-													<ul class="h4 valores">
-														<li><span class="glyphicon glyphicon-chevron-right"></span>Integridad</li>
-														<li><span class="glyphicon glyphicon-chevron-right"></span>Responsabilidad</li>
-														<li><span class="glyphicon glyphicon-chevron-right"></span>Honestidad</li>
-														<li><span class="glyphicon glyphicon-chevron-right"></span>Calidad</li>
-													</ul>
-												</p>
-											</div>
-										</div>
-									</li>
-									<li>
-										<div class="container slide">
-											<div  class="col-md-3 col-md-offset-1">
-												<img src="images/politicas_ico.png"></img>
-											</div>
-											<div class="info col-md-7">
-												<h3>Política de seguridad, salud y protección ambiental</h3>
-												<p class="h5">
-													<span class="rojo">ASM Logistic S.A. de C.V.</span>, considera que el capital más importante es su recurso humano y su compromiso con el medio ambiente, por lo cual, es prioriad de la organización fomentar, capacitar y mantener buenas condiciones de seguridad, salud y protección ambiental; para con ello, salvaguardar la integridad física del trabajador y el medio ambiente
-												</p>
-											</div>
-										</div>
-									</li>
-								 </ul>
-								 <div class="jcarousel-arrow left prev-stage" style="display: block;"><span class="glyphicon glyphicon-chevron-left"/></div>
-								 <div class="jcarousel-arrow right next-stage" style="display: block;"><span class="glyphicon glyphicon-chevron-right"/></div>
-							<div class="clearfix"></div>
-							<div class="carousel carousel-navigation col-md-4 col-md-offset-4" data-jcarousel="true">
-									<ul style="left: 0px; top: 0px;">
-											<li data-jcarouselcontrol="true" class="active"><img src="images/mision_ico_min.png" width="55" height="50" alt=""></li>
-											<li data-jcarouselcontrol="true" class=""><img src="images/vision_ico_min.png" width="55" height="50" alt=""></li>
-											<li data-jcarouselcontrol="true" class=""><img src="images/valores_ico_min.png" width="55" height="50" alt=""></li>
-											<li data-jcarouselcontrol="true" class=""><img src="images/politicas_ico_min.png" width="55" height="50" alt=""></li>
-									</ul>
-							</div>
-						</div><!-- /jcarousel -->
+						
 				</div><!-- /row -->
 		</div> <!-- /container -->
 	</div> <!-- /white -->
+	<div class="cover-grey">
+		<div id="mision" class="container mision">
+			<div class="jcarousel carousel-stage">
+					<ul id="slides" class="jcarousel-skin-tango">
+							<li>
+								<div class="container slide">
+									<div  class="col-md-3 col-md-offset-1">
+										<img src="images/mision_ico.png"></img>
+									</div>
+
+									<div class="info col-md-7">
+										<h3>Misión</h3>
+										<p class="h5">
+											Convertirnos en parte fundamental del crecimiento de nuestros clientes, aportando opciones de logística en el mercado, a través de un servicio global y de manejo de cargas y personal desde el punto de origen hasta su entrega final, así como, el adicional de consultoría aduanal.
+										</p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="container slide">
+									<div  class="col-md-3 col-md-offset-1">
+										<img src="images/vision_ico.png"></img>
+									</div>
+									<div class="info col-md-7">
+										<h3>Visión</h3>
+										<p class="h5">
+											Llegar a ser una empresa que integre de manera global servicios de logística y consultoría aduanal para así promover el crecimiento de nuestros clientes vigilando en todo momento el precio-calidad y siempre integrando un valor agregado.
+										</p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="container slide">
+									<div  class="col-md-3 col-md-offset-1">
+										<img src="images/valores_ico.png"></img>
+									</div>
+									<div class="info col-md-7">
+										<h3>Valores</h3>
+										<p>
+											<ul class="h3 valores">
+												<li><span class="glyphicon glyphicon-chevron-right"></span>Integridad</li>
+												<li><span class="glyphicon glyphicon-chevron-right"></span>Responsabilidad</li>
+												<li><span class="glyphicon glyphicon-chevron-right"></span>Honestidad</li>
+												<li><span class="glyphicon glyphicon-chevron-right"></span>Calidad</li>
+											</ul>
+										</p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="container slide">
+									<div  class="col-md-3 col-md-offset-1">
+										<img src="images/politicas_ico.png"></img>
+									</div>
+									<div class="info col-md-7">
+										<h3>Política de seguridad, salud y protección ambiental</h3>
+										<p class="h5">
+											<span class="rojo">ASM Logistic S.A. de C.V.</span>, considera que el capital más importante es su recurso humano y su compromiso con el medio ambiente, por lo cual, es prioriad de la organización fomentar, capacitar y mantener buenas condiciones de seguridad, salud y protección ambiental; para con ello, salvaguardar la integridad física del trabajador y el medio ambiente
+										</p>
+									</div>
+								</div>
+							</li>
+						 </ul>
+						 <div class="jcarousel-arrow left prev-stage" style="display: block;"><span class="glyphicon glyphicon-chevron-left"/></div>
+						 <div class="jcarousel-arrow right next-stage" style="display: block;"><span class="glyphicon glyphicon-chevron-right"/></div>
+					<div class="clearfix"></div>
+					<div class="carousel carousel-navigation col-md-4 col-md-offset-4" data-jcarousel="true">
+							<ul style="left: 0px; top: 0px;">
+									<li data-jcarouselcontrol="true" class="active"><img src="images/mision_ico_min.png" width="55" height="50" alt=""></li>
+									<li data-jcarouselcontrol="true" class=""><img src="images/vision_ico_min.png" width="55" height="50" alt=""></li>
+									<li data-jcarouselcontrol="true" class=""><img src="images/valores_ico_min.png" width="55" height="50" alt=""></li>
+									<li data-jcarouselcontrol="true" class=""><img src="images/politicas_ico_min.png" width="55" height="50" alt=""></li>
+							</ul>
+					</div>
+			</div><!-- /jcarousel -->
+		</div> <!-- /container -->
+	</div><!-- /grey -->
 
 	<div class="container quote cover-red">
 			<div class="col-md-6 col-md-offset-3">
@@ -165,7 +170,7 @@
 	</div>
 
 	<div class="white">
-		<div class="container services">
+		<div id="services" class="container services">
 			<!-- Example row of columns -->
 			<div class="row">
 				<div class="text-center">				
@@ -189,6 +194,7 @@
 						<h4>IMPORTACÍON / EXPORTACION</h4>
 						<hr>
 						<p>ASM LOGISTIC proporciona los servicios de exportación e importación de cualquier maquinaria o herramienta que se solicite, cuenta con agentes aduanales certificados quienes se hacen cargo de su logística.</p>
+						</br>
 					</div>
 					<div class="clearfix"></div>
 					<div class="col-md-3 text-right">
@@ -201,6 +207,11 @@
 					</div>
 			 	</div>
 			</div>
+		</div> <!-- /container -->
+
+	</div>
+	<div class="cover-grey">
+		<div id="galeria" class="container galeria">
 			<div class="row">
 				<div class="jcarousel gallery carousel-stage">
 					<ul id="slides" class="jcarousel-skin-tango">
@@ -215,13 +226,42 @@
 								</p>
 							</article>
 						</li>
-						<li class="truck1 cover-shadow container">
+						<li class="truck2 cover-shadow container">
 							<article>
 								<h3>CAMIÓN TORTON CON GRÚA ARTICULADA</h3>
 								<p>
 									<h4>Marca: Kenworth Mod: T370  Año: 2015 </h4>
 									Capacidad de carga plataforma: 26.4 T </br>
-									Capacidad de carga de grúa: 8 T</br>
+									Plataforma de 7 mts | GPS
+								</p>
+							</article>
+						</li>
+						<li class="truck3 cover-shadow container">
+							<article>
+								<h3>CAMIÓN TORTON CON GRÚA ARTICULADA</h3>
+								<p>
+									<h4>Marca: Kenworth Mod: T370  Año: 2015 </h4>
+									Capacidad de carga plataforma: 26.4 T </br>
+									Plataforma de 7 mts | GPS
+								</p>
+							</article>
+						</li>
+						<li class="buque1 cover-shadow container">
+							<article>
+								<h3>CAMIÓN TORTON CON GRÚA ARTICULADA</h3>
+								<p>
+									<h4>Marca: Kenworth Mod: T370  Año: 2015 </h4>
+									Capacidad de carga plataforma: 26.4 T </br>
+									Plataforma de 7 mts | GPS
+								</p>
+							</article>
+						</li>
+						<li class="heli1 cover-shadow container">
+							<article>
+								<h3>CAMIÓN TORTON CON GRÚA ARTICULADA</h3>
+								<p>
+									<h4>Marca: Kenworth Mod: T370  Año: 2015 </h4>
+									Capacidad de carga plataforma: 26.4 T </br>
 									Plataforma de 7 mts | GPS
 								</p>
 							</article>
@@ -231,21 +271,30 @@
 					<div class="jcarousel-arrow right next-stage" style="display: block;"><span class="glyphicon glyphicon-chevron-right"/></div>
 				</div>
 			</div>
-		</div> <!-- /container -->
-
+		</div><!-- /container -->
 	</div>
-
-	<div class="cover-blue">
-		<div class="container contacto">
-			<h2>Contacto</h2>
-			<p>
-				Información de contacto
-			</p>
+	<div class="cover-blue-mate">
+		<div id="contacto" class="container contacto">
+			<div class="text-center">
+				<h2>Contacto</h2>
+			</div>
+			<div class="col-md-6 text-right">
+				<img src="images/logo_blanco.png"></img>
+			</div>
+			<article class="col-md-5">
+				Calle 51 No. 176 Col. Santa Margarita</br>
+				Cd. del Carmen, Campeche.</br>
+				C.P. 24120</br></br>
+				Tel 938 118 3362</br>
+				informes@asml.mx
+		 	</article>
+		 	<div class="clearfix"></div>	
+		 	<hr/>
 			<footer>
-				<p>© Company 2014</p>
+				<p>© ASM Logistic 2014</p>
 			</footer>
 		</div><!-- /container -->
-	</did><!-- /white -->			
+	</div><!-- /white -->			
 
 
 	<!-- Bootstrap core JavaScript
