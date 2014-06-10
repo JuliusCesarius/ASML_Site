@@ -7,7 +7,7 @@
     var connector = function(itemNavigation, carouselStage) {
         return carouselStage.jcarousel('items').eq(itemNavigation.index());
     };
-
+	$(".contacto").css("height", $(window).height() - 60);
 	var img = 1;
 
 	setInterval(function() {
