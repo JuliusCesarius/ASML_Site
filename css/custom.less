@@ -39,9 +39,13 @@ h5,.h5{
 hr{
 	border-top: 1px solid @rojo;
 }
-.mision,.quienes,.services,.flotilla{
+.mision,.quienes,.services{
 	padding-bottom: 55px;
 	padding-top: 55px;
+}
+.flotilla{
+	padding-bottom: 45px;
+	padding-top: 35px;
 }
 .home{
 	& img{
@@ -100,9 +104,6 @@ hr{
 	padding-top: 55px;
 	padding-bottom: 100px;
 }
-.flotilla{
-
-}
 .gallery{
 	min-height: 400px;
 	color: white;
@@ -144,12 +145,16 @@ hr{
 		& article{
 			.transition(opacity .3s ease-in-out);
 			cursor: default;
+			display: block;
+			width: 100%;
+			background-color: black;
 			opacity: .4;
 			line-height: 1.2em;
 			color: @gris-light;
 			position: absolute;
 			bottom: 0;
-			left: 1.5em;
+			left: 0;
+			padding-left: 1.5em;
 			&:hover{
 				opacity: 1;
 			}
