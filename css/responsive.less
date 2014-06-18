@@ -25,6 +25,11 @@ and (max-width : 1024px) {
 		padding-bottom: 0;
 		padding-top: 20px;
 	}
+	.mision{
+		img{
+			width:100%;
+		}
+	}
 	h5,.h5{
 		font-size: 1.1em;
 	}
@@ -43,14 +48,73 @@ and (orientation : landscape) {
 	(min-width : 768px) 
 and (max-width : 1024px) 
 and (orientation : portrait) {
-
+	.services{
+		article{
+			p{
+				margin-bottom: 60px;
+			}
+			img{
+				margin-bottom: -50px;
+			}
+		}
+	}
+	.mision{		
+		font-size: .9em;
+		padding-top: 5%;
+	}
+	.col-md-offset-1,
+	.col-md-3,
+	.col-md-4,
+	.col-md-7,
+	.col-md-9{
+		display:inline-block;
+		vertical-align: middle;
+		float: left;
+	}
+	.col-md-3{
+		width: 25%;
+	}
+	.col-md-4,{
+		width: 40%;
+	}
+	.col-md-7{
+		width: 55%;
+	}
+	.col-md-9{
+		width: 65%;
+	}
+	.col-md-offset-1{
+		margin-left: 8%;;
+	}
+	.col-md-offset-4{
+		margin-left: 24%;;	
+	}
+	.navbar-default .navbar-nav li a{
+		padding-left: 30px;
+	}
 }
 
 /* Desktops and laptops ----------- */
 @media
 	(min-width : 1224px) {
+	.mision, .quienes, .services {
+		padding-bottom: 25px;
+		padding-top: 35px;
+	}
 	h5,.h5{
 		font-size: 1.2em;
+	}
+	.services{
+		article{
+			width: 100%;
+			font-size: 1.2em;
+			.ico{
+				text-align: center;;
+			}
+			img{
+				width:50%;
+			}
+		}
 	}
 }
 
