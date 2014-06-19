@@ -8,7 +8,6 @@ and (max-width : 480px) {
 /* Smartphones (landscape) ----------- */
 @media
 	(min-width : 321px) {
-/* Styles */
 }
 
 /* Smartphones (portrait) ----------- */
@@ -19,7 +18,29 @@ and (max-width : 320px) {
 
 /* iPads (portrait and landscape) ----------- */
 @media 
-	(min-width : 768px) 
+	(min-width : 600px) 
+and (max-width : 740px) {
+	.container {
+		width: 600px;
+	}
+	.mision{		
+		font-size: .7em;
+	}
+	.carousel{
+		width: 100%!important;
+		margin-left: 16%;
+		ul{
+
+		}
+	}
+	.carousel-navigation{
+		margin-top: 0;
+	}
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media 
+	(min-width : 600px) 
 and (max-width : 1024px) {
 	.mision, .quienes, .services {
 		padding-bottom: 0;
@@ -33,6 +54,40 @@ and (max-width : 1024px) {
 	h5,.h5{
 		font-size: 1.1em;
 	}
+	.col-md-offset-1,
+	.col-md-3,
+	.col-md-4,
+	.col-md-7,
+	.col-md-9{
+		display:inline-block;
+		vertical-align: middle;
+		float: left;
+	}
+	.col-md-3{
+		width: 25%;
+	}
+	.col-md-4,{
+		width: 40%;
+	}
+	.col-md-7{
+		width: 55%;
+	}
+	.col-md-9{
+		width: 65%;
+	}
+	.col-md-offset-1{
+		margin-left: 0;
+	}
+	.col-md-offset-4{
+		margin-left: 15%;
+	}
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media 
+	(min-width : 768px) 
+and (max-width : 1024px) {
+	
 }
 
 /* iPads (landscape) ----------- */
@@ -63,33 +118,6 @@ and (orientation : portrait) {
 	.mision{		
 		font-size: .9em;
 		padding-top: 5%;
-	}
-	.col-md-offset-1,
-	.col-md-3,
-	.col-md-4,
-	.col-md-7,
-	.col-md-9{
-		display:inline-block;
-		vertical-align: middle;
-		float: left;
-	}
-	.col-md-3{
-		width: 25%;
-	}
-	.col-md-4,{
-		width: 40%;
-	}
-	.col-md-7{
-		width: 55%;
-	}
-	.col-md-9{
-		width: 65%;
-	}
-	.col-md-offset-1{
-		margin-left: 8%;;
-	}
-	.col-md-offset-4{
-		margin-left: 24%;;	
 	}
 	.navbar-default .navbar-nav li a{
 		padding-left: 30px;
