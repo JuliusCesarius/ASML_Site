@@ -104,6 +104,7 @@
   // Cache selectors
   var lastId,
       topMenu = $(".navbar"),
+      topMenuHeight = null,
       // All list items
       menuItems = topMenu.find("a"),
       // Anchors corresponding to menu items
@@ -112,22 +113,27 @@
         if (item.length) { return item; }
       });
 
+  $(".navbar-toggle").click(function(){
+    if (topMenuHeight == null){      
+        topMenuHeight = topMenu.outerHeight();
+    }
+  });
+
   // Bind click handler to menu items
   // so we can get a fancy scroll animation
   menuItems.click(function(e){
     var href = $(this).attr("href"),
-        topMenuHeight = topMenu.outerHeight(),
         offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
     $('html, body').stop().animate({ 
         scrollTop: offsetTop
     }, 300);
     e.preventDefault();
+    $('.collapse').collapse('hide');
   });
 
   // Bind to scroll
   $(window).scroll(function(){
      // Get container scroll position
-     var topMenuHeight = topMenu.outerHeight();
      var fromTop = $(this).scrollTop()+topMenuHeight;
      
      // Get id of current scroll item
