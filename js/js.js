@@ -7,7 +7,11 @@
     var connector = function(itemNavigation, carouselStage) {
         return carouselStage.jcarousel('items').eq(itemNavigation.index());
     };
-	$("section").css("height", $(window).height() - 60);
+
+    if($(window).height() > 600){
+  	 $("section").css("height", $(window).height() - 60);
+    }
+
 	var img = 1;
 
 	setInterval(function() {
@@ -122,6 +126,9 @@
   // Bind click handler to menu items
   // so we can get a fancy scroll animation
   menuItems.click(function(e){
+    if (topMenuHeight == null){      
+      topMenuHeight = topMenu.outerHeight();
+    }
     var href = $(this).attr("href"),
         offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
     $('html, body').stop().animate({ 
@@ -155,7 +162,9 @@
   });
 
   $(window).on("resize",function(){
-    $("section").css("height", $(window).height() - 60);
+    if($(window).height() > 600){
+      $("section").css("height", $(window).height() - 60);
+    }
   });
 
 })(jQuery);
