@@ -1,3 +1,4 @@
+@import "functions";
 /* Smartphones (portrait and landscape) ----------- */
 @media
 	(min-width : 320px) 
@@ -13,7 +14,7 @@ and (max-width : 600px) {
 			width: 100%;
 			margin-left: -15%;
 			li{
-				margin: 10px;
+				margin: 8px;
 				text-align: center;
 				font-size: .6em;
 			}
@@ -54,14 +55,29 @@ and (max-width : 600px) {
 			border: none;
 			font-size: 1em;
 		}
-	}
-	.contacto{
+		.text-right{
+			text-align: center;
+		}
 		img{
 			width: 90%
 		}
 	}
+	.flotilla{
+		padding: 0;
+		.gallery{
+			min-height: 380px;
+			height: 100%;
+			width: 94%;
+			li{
+				min-height: 380px;
+				article{
+					font-size: .8em;
+				}
+			}
+		}
+	}
 	.container{
-		width: 330px;
+		width: 320px;
 		padding-left: 5px;
 		padding-right: 5px;
 	}
@@ -88,20 +104,25 @@ and (max-width : 600px) {
 				}
 			}
 			.jcarousel-arrow{				
-	 			top: 45%;
+	 			top: 55%;
+	 			text-align: center;
 	 			.right{
 	 				right: -10px;
 	 			}
 	 			.left{
 					left: -10px;
 	 			}
+				.text-shadow();
 	 		}
 			.carousel-navigation{
 				margin-top: 0;
-				margin-left: 30%;
-				width: 50%!important;
-				li{
-					margin: 0 10px;
+				margin-left: 0;
+				width: 300px!important;
+				ul{
+					width: 300px;
+					li{
+						margin: 0 7px;
+					}
 				}
 			}
 		}
@@ -142,6 +163,11 @@ and (max-width : 740px) {
 
 		}
 	}
+	.contacto{
+		.text-right{
+			text-align: center;
+		}
+	}
 	.carousel-navigation{
 		margin-top: 0;
 	}
@@ -165,6 +191,9 @@ and (max-width : 1024px) {
 	}
 	.contacto{
 		text-align: center;
+		.text-right{
+			text-align: center;
+		}
 		article{
 			border: none;
 		}
