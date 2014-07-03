@@ -2,6 +2,9 @@
 @media
 	(min-width : 320px) 
 and (max-width : 600px) {
+	body{
+		overflow-x: hidden;
+	}
 	.home{
 		img{
 			width: 90%
@@ -10,14 +13,18 @@ and (max-width : 600px) {
 			width: 100%;
 			margin-left: -15%;
 			li{
-				line-height: 9px;
-				margin: 15px;
+				margin: 10px;
 				text-align: center;
-				width: 100%;
+				font-size: .6em;
 			}
 		}
 	}
+	.padding-3{
+		padding-top:5px;
+		padding-bottom: 5px;
+	}
 	.mision, .quienes, .services,.contacto{
+		padding-top: 15px;
 		text-align: center;
 		.text-right{
 			text-align: center;
@@ -29,28 +36,92 @@ and (max-width : 600px) {
 				float: none;
 			}
 		}
+		.valores{
+			width: 100%;
+			text-align: left;
+		}
+	}
+	.quienes{
+		h2, .h2{
+			font-size: 1.8em;
+		}
+		h5, .h5 {
+			line-height: 1.4em;
+		}
 	}
 	.contacto{
 		article{
 			border: none;
+			font-size: 1em;
 		}
 	}
-	.jcarousel-arrow{
-		display: none!important;
+	.contacto{
+		img{
+			width: 90%
+		}
 	}
-	.jcarousel ul{
-		width: 100%;
-		li{
-			float:none;
+	.container{
+		width: 330px;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	.cover-shadow{	
+		-webkit-box-shadow: none;
+		-moz-box-shadow:    none;
+		box-shadow:         none;
+	}
+	.mision, .flotilla{
+		.col-md-offset-1{
+			width: 0;
+		}
+		.jcarousel {
+			font-size: .8em;
+			margin-bottom: 35px;
+			h3,.h3{
+				font-size: 2em;
+			}
 			.slide{
-				padding-top: 10%;
-				padding-bottom: 10%;
+				img{
+					width: 200px;
+					left: 50px;
+					position: relative;
+				}
+			}
+			.jcarousel-arrow{				
+	 			top: 45%;
+	 			.right{
+	 				right: -10px;
+	 			}
+	 			.left{
+					left: -10px;
+	 			}
+	 		}
+			.carousel-navigation{
+				margin-top: 0;
+				margin-left: 30%;
+				width: 50%!important;
+				li{
+					margin: 0 10px;
+				}
 			}
 		}
 	}
-	.carousel-navigation{
-		display: none!important;
-	}
+	// .jcarousel-arrow{
+	// 	display: none!important;
+	// }
+	// .jcarousel ul{
+	// 	width: 100%;
+	// 	li{
+	// 		float:none;
+	// 		.slide{
+	// 			padding-top: 10%;
+	// 			padding-bottom: 10%;
+	// 		}
+	// 	}
+	// }
+	// .carousel-navigation{
+	// 	display: none!important;
+	// }
 }
 
 
@@ -114,10 +185,10 @@ and (max-width : 1024px) {
 		width: 25%;
 	}
 	.col-md-4,{
-		width: 35%;
+		width: 33%;
 	}
 	.col-md-7{
-		width: 55%;
+		width: 65%;
 	}
 	.col-md-9{
 		width: 65%;
@@ -127,6 +198,16 @@ and (max-width : 1024px) {
 	}
 	.col-md-offset-4{
 		margin-left: 15%;
+	}
+	.jcarousel {
+		.carousel-navigation{
+			margin-top: 0;
+			margin-left: 30%;
+			width: 50%!important;
+			li{
+				margin: 0 10px;
+			}
+		}
 	}
 }
 
@@ -231,6 +312,8 @@ and (orientation : portrait) {
 			margin-top: 0;
 		}
 	}
+
+
 	.col-md-6{
 		width: 50%!important;
 	}
